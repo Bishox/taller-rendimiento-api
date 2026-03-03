@@ -50,17 +50,20 @@ Clona el proyecto y ejecuta:
 
 Bash
 # Instalar dependencias locales
-``` install
+```
+ install
 ```
 # Sincronizar la base de datos (Prisma 6)
 ```
 npx prisma migrate dev --name init
 ```
 # Generar datos de prueba
-```node seed.js
+```
+node seed.js
 ```
 # Levantar infraestructura (API + Redis)
-```docker-compose up --build
+```
+docker-compose up --build
 ```
 Método,Endpoint,Descripción,Estrategia
 GET,/users,Lista de usuarios,Caché Redis
